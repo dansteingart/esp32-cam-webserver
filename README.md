@@ -1,4 +1,15 @@
-# ESP32-CAM example revisited. &nbsp;&nbsp;&nbsp; <span title="Master branch build status">[![CI Status](https://travis-ci.org/easytarget/esp32-cam-webserver.svg?branch=master)](https://travis-ci.org/github/easytarget/esp32-cam-webserver)</span> &nbsp;&nbsp; <span title="ESP EYE">![ESP-EYE logo](Docs/logo.svg)</span>
+# ESP32-CAM example revisited. 
+
+
+## NB: Dan here, I didn't make this
+
+This is a fork for my own hacks. If you want the latest/greatest and to give kudos, head to [easytarget](https://github.com/easytarget/esp32-cam-webserver).
+
+What I added:
+
+- `setup.sh`: this (tries to) install the specifics you need to compile with `arduino-cli` but assumes you already have a working copy of `arduino-cli`
+- `flash.sh`: this wraps some basic commands to set `SSID`, `PASS` and `mDNS` at flash time so you do't have to futz with the code. 
+- `libESP32.py`: simple python library to control the ESP32cam via requests.
 
 ## Taken from the ESP examples, and expanded
 This sketch is a extension/expansion/rework of the 'official' ESP32 Camera example sketch from Espressif:
